@@ -1,2 +1,2 @@
-# Pemrogoraman-Lanjut-2021-2H
-Kuliah pemrograman lanjut 2021 kelas 2H
+# Pemrogoraman-Lanjut-2021
+Kuliah pemrograman lanjut 2021 kelas 2G, 2H, 2I
