@@ -19,4 +19,12 @@ public class BiggerNumber {
 
         System.out.println("Nilai terbesar adalah "+t);
     }
+
+    public int terbesar(int x, int y){
+        int t = x;
+        if(y > x){
+            t = x;
+        }
+        return t;
+    }
 }
