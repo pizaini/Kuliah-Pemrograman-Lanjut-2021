@@ -1,26 +1,18 @@
-package org.pizaini.javalanjut.gui;
+package org.pizaini.javalanjut.gui.sort;
 
 import javax.swing.*;
-import java.awt.*;
-import java.net.URL;
 
-public class RunFormBiodata {
+public class RunExampleSorting {
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ignored) {
         }
 
-        URL url = RunFormBiodata.class.getResource("/icon.png");
-
-        ImageIcon icon = null;
-        if (url != null) {
-            icon = new ImageIcon(url.getPath());
-        }
-
-        JFrame jFrame = new JFrame("Form Biodata");
-        jFrame.setIconImage(icon.getImage());
-        jFrame.setContentPane(new FormBiodata().getRootPanel());
+        ImageIcon imageIcon = new ImageIcon("res/icon.png");
+        JFrame jFrame = new JFrame("Example");
+        jFrame.setIconImage(imageIcon.getImage());
+        jFrame.setContentPane(new ExampleSorting().getRootPanel());
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setLocationRelativeTo(null);
         jFrame.setSize(500, 400);
